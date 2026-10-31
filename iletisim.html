@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kişisel Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>İletişim Formu</h2>
+            <form>
+                <div>
+                    <label for="txtAd">Adınız Soyadınız:</label>
+                    <input type="text" id="txtAd" name="ad" required minlength="3" placeholder="Adınızı giriniz">
+                </div>
+                <div>
+                    <label for="txtEmail">E-posta Adresiniz:</label>
+                    <input type="email" id="txtEmail" name="eposta" required placeholder="ornek@mail.com">
+                </div>
+                <div>
+                    <label for="selKonu">Konu Seçiniz:</label>
+                    <select id="selKonu" name="konu">
+                        <option value="bilgi">Bilgi Almak İstiyorum</option>
+                        <option value="oneri">Öneri ve İstek</option>
+                        <option value="diger">Diğer</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="txtMesaj">Mesajınız:</label>
+                    <textarea id="txtMesaj" name="mesaj" required maxlength="500" rows="4" placeholder="Mesajınızı yazınız..."></textarea>
+                </div>
+                <div>
+                    <button type="submit">Gönder</button>
+                    <button type="reset">Temizle</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
